@@ -12,7 +12,10 @@ public class ConditionalEx {
 //		whileEx();  // 1~100까지의 합산
 //		whileEx2(); // 구구단 만들기
 //		whileEx3(); // 실행시키지마...끄기 힘듬ㅋㅋ 빨간버튼눌러서 종료
-		dowhileEx();
+//		dowhileEx();
+//		forEx();     // for문으로 만든 구구단
+//		continueEx();
+		breakEx();
 	}
 	
 		public static void ifElseEx() {
@@ -230,6 +233,12 @@ public class ConditionalEx {
 		
 		
 		
+		
+		
+		
+		
+		
+		
 		public static void whileEx3() {
 			// while은 종료를 위한 제어 변수를 잘 제어하여
 			// 무한루프에 빠지지 않도록 해야한다.
@@ -238,6 +247,8 @@ public class ConditionalEx {
 				System.out.println("무한루프...Ctrl+C to Quit");
 			}	
 		}
+		
+		
 		
 		
 		
@@ -278,8 +289,86 @@ public class ConditionalEx {
 		
 		
 		
+		public static void forEx() {
+			// 문법 내에서 제어변수 초기화, 반복조건, 증감식을 모두 포함
+			// 1. 반복 횟수가 정해져 있을 때
+			// 2. 제어 변수를 for문의 해주기 떄문에 while 보다 안전
+			
+			// 단수를 입력, 해당 단의 곱셈표를 출력 (for 문 버전)		}
+			Scanner scanner = new Scanner(System.in);
+			System.out.print("단을 입력하세요.");
+			int dan = scanner.nextInt();
+			
+			for(int i=1; i<=9; i++) {
+				// 내용 출력
+				System.out.println(dan + " * " + i + " = "
+						+ (dan * i));
+			}
+			scanner.close();
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		public static void continueEx() {
+			// 1부터 100까지 for loop
+			// 2의 배수이거나 3의 배수면 출력 안함
+			// 나머지는 출력
+			for (int i=1; i<=100; i++) {
+				// 반복문 중간에 continue
+				// 남은 구문은 실행하지 않고 다음번 루프 진행
+				if ( i%2 == 0 || i%3 ==0 ) {
+					// 아래 남은 코드는 실행되지 않고 다음 루프 진행
+					continue;
+				}
+				System.out.println(i);
+				
+			}
+		}
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		public static void breakEx() {
+			// 1부터 루프를 돌려서 6과 14로 모두 나누어 떨어지는 수는 얼마인가?
+			// 어디까지 루프를 돌려야 할지 예측이 쉽지 않기 때문에 while 을 사용하도록 하자.
+			int num=1;
+			while(true) {
+				if (num % 6 == 0 && num % 14 == 0) {
+					break; // 루프 탈출
+				} 
+				num ++;
+			}
+			System.out.println(num);
+		}
+			
 }
 		
+
+
+
+
+
+
+
+
+
 
 
 
