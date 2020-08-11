@@ -15,7 +15,12 @@ public class ConditionalEx {
 //		dowhileEx();
 //		forEx();     // for문으로 만든 구구단
 //		continueEx();
-		breakEx();
+//		breakEx();
+		
+		
+		randomEx();   // 8월 11일
+		
+		
 	}
 	
 		public static void ifElseEx() {
@@ -357,9 +362,44 @@ public class ConditionalEx {
 			}
 			System.out.println(num);
 		}
+		
+		
+		
+		
+		
+		
+		
+		///////////////////////////////////////////////////////////////////////
+		
+		// 8월 11일
+		public static void randomEx() {
+			// 복수번의 랜덤 (1~6)을 뽑아서 합산
+			int rollCnt = 6; // 횟수
+			int  total = 0;
 			
+			// 횟수를 알 수 없을 때 while 문
+			// 횟수를 알 수 있을 때 for 문
+			
+			for(int i=1; i<=rollCnt; i++) {
+				// 랜덤으로 주사위 값을 추출
+				int num = (int)(Math.random() * 6) +1;
+				System.out.println(i + "번째 주사위 : " + num);
+				total += num;
+			}
+			System.out.println("주사위 총합 : " + total);
+		}
+		
+		
+		
+		
 }
 		
+
+
+
+
+
+
 
 
 
