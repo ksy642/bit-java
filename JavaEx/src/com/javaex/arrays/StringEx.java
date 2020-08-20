@@ -1,4 +1,4 @@
-package com.javaex;
+package com.javaex.arrays;
 // 8월 20일!!!!
 public class StringEx {
 
