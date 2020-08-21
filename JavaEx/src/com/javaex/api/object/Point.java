@@ -1,4 +1,4 @@
-package com.javaex.oop.oject;
+package com.javaex.api.object;
 // 8월 13일
 // v4.
 // 상속 -> color point 만들기

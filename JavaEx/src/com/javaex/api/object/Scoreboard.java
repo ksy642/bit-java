@@ -1,4 +1,4 @@
-package com.javaex.oop.oject;
+package com.javaex.api.object;
 
 import java.util.Arrays;
 

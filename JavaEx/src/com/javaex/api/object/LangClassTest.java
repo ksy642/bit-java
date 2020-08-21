@@ -1,5 +1,5 @@
 
-package com.javaex.oop.oject;
+package com.javaex.api.object;
 
 public class LangClassTest {
 
