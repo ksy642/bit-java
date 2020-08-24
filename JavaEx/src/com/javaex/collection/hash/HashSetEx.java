@@ -34,6 +34,7 @@ public class HashSetEx {
 		hs.remove("C++");
 		System.out.println("SET : " + hs);
 		
+		// 삭제하고 또 삭제해봤자 의미가 없다!
 		hs.remove("C++");
 		System.out.println("SET : " + hs);
 	}
