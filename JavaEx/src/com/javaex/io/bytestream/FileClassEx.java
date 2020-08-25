@@ -10,8 +10,9 @@ import java.io.File;
 import java.io.IOException;
 
 public class FileClassEx {
-	static String rootPath = System.getProperty("user.dir") //	프로젝트 DIR
-			+ "\\files\\";
+	
+		static String rootPath = System.getProperty("user.dir") +
+				"\\files\\";
 	public static void main(String[] args) {
 		//	rootPath 내부의 정보 확인
 		File root = new File(rootPath);
